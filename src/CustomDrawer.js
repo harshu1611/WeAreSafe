@@ -14,23 +14,25 @@ const CustomDrawer=(props)=>{
                 </View>
                 <View style={{}}>
                     <Pressable style={{ borderColor:'#ab1844', borderRadius:10, paddingLeft:50, marginLeft:30, marginTop:20, width:180}} onPress={()=>props.navigation.navigate("UserDashboard")}>
-                        <Text style={{color:'#ab1844', fontSize:30, fontFamily:'Helvetica Neue'}}>Home</Text>
+                        <Text style={{color:'#ab1844', fontSize:30, fontFamily:'Helvetica Neue',textAlign:'left'}}>Home</Text>
                     </Pressable>
                     <Pressable style={{ borderColor:'#ab1844', borderRadius:10,
                      marginRight:30, marginLeft:30, marginTop:20, height:40, width:230, alignContent:'center'}} onPress={()=>props.navigation.navigate("Schedule")}>
                         <Text style={{color:'#ab1844', fontSize:30}}>My Schedule</Text>
                     </Pressable>
-                    <Pressable style={{ borderColor:'#ab1844', borderRadius:10, width:158, marginLeft:30, marginTop:20}} onPress={()=>props.navigation.navigate("CloseAides")}>
+                    <Pressable style={{ borderColor:'#ab1844', borderRadius:10, marginLeft:30, marginTop:20}} onPress={()=>props.navigation.navigate("CloseAides")}>
                         <Text style={{color:'#ab1844',  fontSize:30}}>Close Aides</Text>
                     </Pressable>
                     <Pressable style={{ borderColor:'#ab1844', borderRadius:10, width:158, marginLeft:30, marginTop:20}} onPress={()=>props.navigation.navigate("MapPoints")}>
                         <Text style={{color:'#ab1844',  fontSize:30, alignSelf:'center'}}>Map Points</Text>
                     </Pressable>
                     <Pressable style={{ borderColor:'#ab1844', borderRadius:10, width:158, marginLeft:30, marginTop:20}} onPress={()=>props.navigation.navigate("SOS")}>
-                        <Text style={{color:'#ab1844', fontSize:30}}>SOS</Text>
+                        <Text style={{color:'#ab1844', fontSize:30, textAlign:'center'}}>SOS</Text>
                     </Pressable>
                 </View>
-            
+                <Pressable style={{borderColor:'#ab1844', borderWidth:2, height:30, width:200, borderRadius:12, alignContent:'center', marginTop:80, marginLeft:30}} onPress={()=>props.navigation.navigate("UserLogin")}>
+            <Text style={{color:"#ab1844", textAlign:'center', fontWeight:'bold'}}>Log Out</Text>
+            </Pressable>
             
 
 
