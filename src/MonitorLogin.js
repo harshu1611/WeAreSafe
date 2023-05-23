@@ -2,7 +2,7 @@ import { View, Text, Image, TextInput, Pressable } from 'react-native'
 import React from 'react'
 import { deviceHeight, deviceWidth } from './Dimensions'
 
-export default function MonitorLogin() {
+export default function MonitorLogin(props) {
   return (
     <View style={{backgroundColor:'#87CEEB', height:deviceHeight, width:deviceWidth}}>
         <Image source={require('../assets/images/wasLg.png')} style={{height:200, width:200, alignSelf:'center'}}/>
@@ -13,7 +13,7 @@ export default function MonitorLogin() {
 
 <TextInput placeholder='Password' placeholderTextColor='white'  onChangeText={()=>{}} style={{ paddingHorizontal:10,height:35, width:deviceWidth-70, alignSelf:'center', borderRadius:20, borderColor:'white', borderWidth:2, color:'white', fontWeight:'bold',marginTop:20}}></TextInput>
 </View>
-<Pressable onPress={()=>props.navigation.navigate("UserLogin")} title="User Login" style={{backgroundColor:'#00000000', borderColor:'white', borderWidth:4, alignSelf:'center', height:40,width:160, borderRadius:10,marginTop:20}}>
+<Pressable onPress={()=>props.navigation.navigate("MonitorDashboard")} title="User Login" style={{backgroundColor:'#00000000', borderColor:'white', borderWidth:4, alignSelf:'center', height:40,width:160, borderRadius:10,marginTop:20}}>
         <Text style={{fontSize:15,color:'white', fontWeight:'bold', alignSelf:'center', textAlignVertical:'center', textAlign:'center', marginTop:5}}>
             Login
         </Text>

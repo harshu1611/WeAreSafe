@@ -10,6 +10,7 @@ import Schedule from './Schedule';
 import CloseAides from './CloseAides';
 import MapPoints from './MapPoints';
 import SOS from './SOS';
+import MonitorDashboard from './MonitorDashboard';
 
 const Drawer1 = createDrawerNavigator();
 
@@ -26,6 +27,7 @@ const Drawer=()=>{
         <Drawer1.Screen name="CloseAides" component={CloseAides}/>
         <Drawer1.Screen name="MapPoints" component={MapPoints}/>
         <Drawer1.Screen name="SOS" component={SOS}/>
+        <Drawer1.Screen name="MonitorDashboard" component={MonitorDashboard} options={{drawerItemStyle: {height:0},headerShown:false}}/>
         
 
 
